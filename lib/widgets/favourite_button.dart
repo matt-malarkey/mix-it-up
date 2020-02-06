@@ -23,7 +23,6 @@ class HeartButtonState extends State<HeartButton> {
               color: Theme.of(context).accentColor,
             )
           : Icon(Icons.favorite, color: Theme.of(context).accentColor,),
-      key: UniqueKey(),
     );
   }
 }

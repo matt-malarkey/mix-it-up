@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:mix_it_up_tuesdays/tabs/mix_it_up.dart';
+import 'package:mix_it_up_tuesdays/widgets/icon_button.dart';
 
 class HomeScreen extends StatefulWidget {
   @override
@@ -20,27 +21,11 @@ class HomeScreenState extends State<HomeScreen> {
     ),
   ];
 
-  Widget _navItem(String text, IconData icon, int index) => Padding(
-    padding: const EdgeInsets.symmetric(vertical: 4.0),
-    child: FlatButton(
-          shape: CircleBorder(),
-          clipBehavior: Clip.none,
-          child: Column(
-            mainAxisSize: MainAxisSize.min,
-            children: <Widget>[
-              Padding(
-                padding: const EdgeInsets.only(top: 16.0),
-                child: Icon(icon),
-              ),
-              Padding(
-                padding: const EdgeInsets.only(top: 4.0, bottom: 16.0),
-                child: Text(text),
-              ),
-            ],
-          ),
-          onPressed: () => setState(() => _selectedIndex = index),
-        ),
-  );
+  Widget _navItem(String text, IconData icon, int index) => StyledIconButton(
+        text: text,
+        icon: icon,
+        callback: () => setState(() => _selectedIndex = index),
+      );
 
   @override
   Widget build(BuildContext context) {
@@ -54,7 +39,7 @@ class HomeScreenState extends State<HomeScreen> {
       bottomNavigationBar: Padding(
         padding: const EdgeInsets.only(bottom: 32.0, left: 16.0, right: 16.0),
         child: Card(
-          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(32.0)),
+          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(36.0)),
           clipBehavior: Clip.antiAlias,
           child: Row(
             mainAxisSize: MainAxisSize.max,

@@ -37,18 +37,24 @@ final largeBorderRadius = BorderRadius.circular(32.0);
 
 TextTheme _textWith({@required Color color}) => TextTheme(
       headline: TextStyle(
+        fontFamily: 'DR',
+        fontFamilyFallback: const ['Roboto'],
         color: color,
         fontSize: 40,
         fontWeight: FontWeight.w600,
       ),
       subhead: TextStyle(
+        fontFamily: 'DR',
+        fontFamilyFallback: const ['Roboto'],
         color: color,
         fontSize: 28,
         fontWeight: FontWeight.w300,
       ),
       title: TextStyle(
+        fontFamily: 'DR',
+        fontFamilyFallback: const ['Roboto'],
         color: color,
-        fontSize: 28,
+        fontSize: 40,
         fontWeight: FontWeight.w300,
       ),
       subtitle: TextStyle(

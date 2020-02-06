@@ -20,3 +20,8 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+
+  fonts:
+    - family: DR
+      fonts:
+        - asset: fonts/Daddy-Rewind.ttf
