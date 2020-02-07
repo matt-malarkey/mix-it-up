@@ -18,7 +18,7 @@ class App extends StatelessWidget {
       child: Consumer<Idea>(
         builder: (BuildContext context, Idea value, Widget child) {
           return MaterialApp(
-            title: 'Flutter Demo',
+            title: 'Mix It Up Tuesdays',
             theme: appTheme,
             home: Theme(
               data: appTheme,

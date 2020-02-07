@@ -24,6 +24,7 @@ class HomeScreenState extends State<HomeScreen> {
   Widget _navItem(String text, IconData icon, int index) => StyledIconButton(
         text: text,
         icon: icon,
+        selected: _selectedIndex == index,
         callback: () => setState(() => _selectedIndex = index),
       );
 

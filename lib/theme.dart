@@ -54,7 +54,7 @@ TextTheme _textWith({@required Color color}) => TextTheme(
         fontFamily: 'DR',
         fontFamilyFallback: const ['Roboto'],
         color: color,
-        fontSize: 40,
+        fontSize: 30,
         fontWeight: FontWeight.w300,
       ),
       subtitle: TextStyle(
